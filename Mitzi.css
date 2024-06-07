@@ -1,153 +1,139 @@
-
 /* Oranit Madar 207973488 */
 /* Raziel houri 305427874 */
 
 body {
-    background: linear-gradient(135deg,#71b7e6,#9b59b6);
-    align-items: center;
-    height: 115vh;
-    justify-content: center;
-    background-size: contain;
-    display: flex;
-    margin: 0;
-
-
-}
-
-.content , .form-container{
-    width: 50%;
-    padding: 20px;
-}
-
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Poppins',sans-serif;
-    max-width: 1200px;
-    width: 100%;
-    font-size: 16px; /* Adjust font size */
-    line-height: 1.6; /* Adjust line height */
-
-}
-
-.aligned-form {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: around-Space 1px;
-
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
 }
-#form{
-    width: 300px;
-    margin: 20px auto;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.content, .form-container {
+    flex: 1 1 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+img {
+//make img on the middle of the page
+    display: middle;
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form {
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
     background-color: whitesmoke;
-    border-radius: 4px;
-    font-size: 12px;
-    opacity: 0.9;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-#form button {
-    padding: 10px;
-    margin-top: 5px;
+
+#form h1 {
+    margin-bottom: 20px;
+}
+
+.input-control {
     width: 100%;
-    color: white;
-    background-color: rgb(41, 57, 194);
-    border: none;
-    border-radius: 4px;
+    margin-bottom: 20px;
 }
+
+.input-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
 .input-control input {
+    width: 100%;
+    padding: 10px;
     border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	font-size: 12px;
-	padding: 10px;
-	width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
 .input-control input:focus {
-    outline: 0;
-}
-
-.input-control.success input {
-    border-color: #09c372;
-}
-
-.input-control.error input {
-    border-color: #ff3860;
+    border-color: #009688;
+    outline: none;
 }
 
 .input-control .error {
     color: #ff3860;
-    font-size: 9px;
-    height: 13px;
+    font-size: 12px;
+    height: 16px;
 }
 
-
-.row {
-    display: flex;
-    margin-bottom: 0px;
-    border-radius: 0px;
-
+button {
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color: #2939c2;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-
-.field {
-    margin-right: 10px;
-}
-
-
-form input {
-    border: 2px solid black;
-    padding: 1px;
-}
-
-
-input:hover
- {
-    border-color: orange;
-
-}
-
-input:hover + label
- {
-    color: orange;
-}
-
-img{
-    max-width: 25%;
-    height: auto;
-}
-.container h2{
-    color: white ;
-
+button:hover {
+    background-color: #1e2f9d;
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        height:auto ;
-    }
-    .container{
-        display: flex;
+    .container {
         flex-direction: column;
-
+        padding: 10px;
     }
-    .content , .form-container{
+
+    .content, .form-container {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    #form {
         width: 100%;
+        padding: 15px;
     }
-    #content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-
-
 }
-
-
